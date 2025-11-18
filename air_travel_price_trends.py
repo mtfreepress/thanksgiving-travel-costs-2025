@@ -1,15 +1,3 @@
-"""Process airfare CSV and produce per-airport analysis files.
-
-Reads `airfare-data/montana-air-travel-Q4-price.csv` and writes one CSV per city
-into `airfare-analysis/by-airport/` named `{city-name}-analysis.csv` (spaces -> hyphens).
-
-Output columns:
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-
-Percent columns are numeric strings (no trailing `%`). Inflation-adjusted comparisons
-use the provided `2025Q2InflationAdjFare` column when present.
-"""
-
 from __future__ import annotations
 
 import csv
