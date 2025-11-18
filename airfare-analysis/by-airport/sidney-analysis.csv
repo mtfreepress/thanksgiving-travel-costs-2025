@@ -1,0 +1,6 @@
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
+2020,SDY,Sidney,357.22,,0.00,441.25,,0.00
+2021,SDY,Sidney,563.85,57.84,57.84,652.81,47.95,47.95
+2022,SDY,Sidney,563.00,-0.15,57.61,608.61,-6.77,37.93
+2023,SDY,Sidney,686.89,22.01,92.29,719.21,18.17,62.99
+2024,SDY,Sidney,607.33,-11.58,70.02,618.92,-13.94,40.27

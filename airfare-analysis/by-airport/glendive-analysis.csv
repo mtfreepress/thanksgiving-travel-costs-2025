@@ -1,0 +1,6 @@
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
+2020,GDV,Glendive,245.33,,0.00,303.04,,0.00
+2021,GDV,Glendive,405.00,65.08,65.08,468.90,54.73,54.73
+2022,GDV,Glendive,721.78,78.22,194.21,780.25,66.40,157.47
+2023,GDV,Glendive,365.00,-49.43,48.78,382.17,-51.02,26.11
+2024,GDV,Glendive,478.00,30.96,94.84,487.12,27.46,60.74

@@ -1,0 +1,69 @@
+year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare,passengers2024
+2020,97,BZN,Bozeman Yellowstone International,Bozeman,325.10,401.57,56214
+2020,142,MSO,Missoula Montana,Missoula,318.22,393.08,25558
+2020,144,BIL,Billings Logan International,Billings,317.58,392.28,25278
+2020,150,FCA,Glacier Park International,Kalispell,349.04,431.14,21498
+2020,187,GTF,Great Falls International,Great Falls,341.65,422.02,10663
+2020,218,HLN,Helena Regional,Helena,405.50,500.89,5609
+2020,322,BTM,Bert Mooney,Butte,422.29,521.62,907
+2020,357,WYS,Yellowstone,West Yellowstone,282.25,348.64,259
+2020,393,SDY,Sidney Richland Regional,Sidney,357.22,441.25,67
+2020,406,GDV,Dawson Community,Glendive,245.33,303.04,29
+2020,409,OLF,L. M. Clayton,Wolf Point,309.00,381.68,19
+2020,412,HVR,Havre City-County,Havre,604.00,746.07,14
+2020,,,,National Average,,260.67,321.98,
+2021,97,BZN,Bozeman Yellowstone International,Bozeman,361.33,418.34,56214
+2021,142,MSO,Missoula Montana,Missoula,450.77,521.89,25558
+2021,144,BIL,Billings Logan International,Billings,417.07,482.87,25278
+2021,150,FCA,Glacier Park International,Kalispell,437.12,506.09,21498
+2021,188,GTF,Great Falls International,Great Falls,433.66,502.08,10663
+2021,222,HLN,Helena Regional,Helena,504.34,583.92,5609
+2021,327,BTM,Bert Mooney,Butte,550.48,637.33,907
+2021,364,WYS,Yellowstone,West Yellowstone,292.91,339.12,259
+2021,400,SDY,Sidney Richland Regional,Sidney,563.85,652.81,67
+2021,414,GDV,Dawson Community,Glendive,405.00,468.90,29
+2021,421,HVR,Havre City-County,Havre,531.25,615.07,14
+2021,422,GGW,Wokal Field Glasgow Valley County,Glasgow,443.71,513.72,12
+2022,,,,National Average,,327.13,378.75,
+2022,97,BZN,Bozeman Yellowstone International,Bozeman,448.99,485.36,56214
+2022,142,MSO,Missoula Montana,Missoula,542.66,586.62,25558
+2022,144,BIL,Billings Logan International,Billings,527.74,570.49,25278
+2022,150,FCA,Glacier Park International,Kalispell,553.40,598.23,21498
+2022,188,GTF,Great Falls International,Great Falls,503.55,544.35,10663
+2022,221,HLN,Helena Regional,Helena,636.62,688.19,5609
+2022,326,BTM,Bert Mooney,Butte,625.75,676.44,907
+2022,362,WYS,Yellowstone,West Yellowstone,519.56,561.64,259
+2022,399,SDY,Sidney Richland Regional,Sidney,563.00,608.61,67
+2022,413,GDV,Dawson Community,Glendive,721.78,780.25,29
+2022,417,OLF,L. M. Clayton,Wolf Point,523.50,565.91,19
+2022,421,HVR,Havre City-County,Havre,671.00,725.36,14
+2022,422,GGW,Wokal Field Glasgow Valley County,Glasgow,455.25,492.13,12
+2022,,,,National Average,,393.85,425.75,
+2023,97,BZN,Bozeman Yellowstone International,Bozeman,446.68,467.70,56214
+2023,142,MSO,Missoula Montana,Missoula,556.54,582.72,25558
+2023,144,BIL,Billings Logan International,Billings,530.47,555.43,25278
+2023,150,FCA,Glacier Park International,Kalispell,533.25,558.34,21498
+2023,188,GTF,Great Falls International,Great Falls,473.07,495.33,10663
+2023,222,HLN,Helena Regional,Helena,608.23,636.85,5609
+2023,329,BTM,Bert Mooney,Butte,641.49,671.67,907
+2023,367,WYS,Yellowstone,West Yellowstone,541.13,566.59,259
+2023,405,SDY,Sidney Richland Regional,Sidney,686.89,719.21,67
+2023,419,GDV,Dawson Community,Glendive,365.00,382.17,29
+2023,423,OLF,L. M. Clayton,Wolf Point,805.60,843.50,19
+2023,428,HVR,Havre City-County,Havre,903.00,945.48,14
+2023,429,GGW,Wokal Field Glasgow Valley County,Glasgow,680.50,712.52,12
+2023,,,,National Average,,384.85,402.98,
+2024,97,BZN,Bozeman Yellowstone International,Bozeman,452.94,461.58,56214
+2024,142,MSO,Missoula Montana,Missoula,489.74,499.08,25558
+2024,144,BIL,Billings Logan International,Billings,482.53,491.74,25278
+2024,150,FCA,Glacier Park International,Kalispell,505.35,514.99,21498
+2024,188,GTF,Great Falls International,Great Falls,485.66,494.93,10663
+2024,222,HLN,Helena Regional,Helena,595.48,606.84,5609
+2024,331,BTM,Bert Mooney,Butte,631.57,643.61,907
+2024,369,WYS,Yellowstone,West Yellowstone,412.00,419.86,259
+2024,407,SDY,Sidney Richland Regional,Sidney,607.33,618.92,67
+2024,422,GDV,Dawson Community,Glendive,478.00,487.12,29
+2024,426,OLF,L. M. Clayton,Wolf Point,246.50,251.20,19
+2024,431,HVR,Havre City-County,Havre,572.33,583.25,14
+2024,432,GGW,Wokal Field Glasgow Valley County,Glasgow,541.67,552.00,12
+2024,,,,National Average,,397.63,405.22,

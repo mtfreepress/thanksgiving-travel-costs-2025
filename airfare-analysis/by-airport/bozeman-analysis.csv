@@ -1,0 +1,6 @@
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
+2020,BZN,Bozeman,325.10,,0.00,401.57,,0.00
+2021,BZN,Bozeman,361.33,11.14,11.14,418.34,4.18,4.18
+2022,BZN,Bozeman,448.99,24.26,38.11,485.36,16.02,20.87
+2023,BZN,Bozeman,446.68,-0.51,37.40,467.70,-3.64,16.47
+2024,BZN,Bozeman,452.94,1.40,39.32,461.58,-1.31,14.94
