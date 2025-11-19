@@ -30,6 +30,19 @@ def read_input(path: Path) -> List[Dict[str, Any]]:
             # skip rows with no city or airportCode (National Average rows)
             city = (r.get("city") or "").strip()
             code = (r.get("aiportCode") or r.get("airportCode") or "").strip()
+            # detect national average rows where airport or city contains 'National Average'
+            airport_label = (r.get("airport") or "").strip()
+            if (city == "" or code == "") and (airport_label.lower() == "national average" or city.lower() == "national average"):
+                # synthesize a national-average record (set airportCode if missing)
+                r_parsed = {
+                    "year": int(r.get("year", "0")) if (r.get("year") or "").strip() else 0,
+                    "airportCode": code if code else "NATIONAL",
+                    "City": "National Average",
+                    "averageFare": safe_float(r.get("averageFare")),
+                    "2025Q2InflationAdjFare": safe_float(r.get("2025Q2InflationAdjFare")),
+                }
+                rows.append(r_parsed)
+                continue
             if city == "" or code == "":
                 continue
             # normalize keys
@@ -42,6 +55,106 @@ def read_input(path: Path) -> List[Dict[str, Any]]:
             }
             rows.append(r_parsed)
     return rows
+
+
+def write_aggregate(rows: List[Dict[str, Any]], out_dir: Path) -> None:
+    """Write aggregate CSVs for big-6 and national average.
+
+    big-6: Bozeman, Missoula, Billings, Kalispell, Great Falls, Helena
+    """
+    # place aggregates under `airfare-analysis/aggregate`
+    out_base = out_dir.parent / "aggregate"
+    out_base.mkdir(parents=True, exist_ok=True)
+
+    # convenience index by (city, year)
+    by_city_year: Dict[str, Dict[int, Dict[str, Any]]] = {}
+    cities = set()
+    for r in rows:
+        city = r["City"]
+        year = r["year"]
+        cities.add(city)
+        by_city_year.setdefault(city, {})[year] = r
+
+    def compute_group_avg(group_cities: List[str]) -> Dict[int, Dict[str, Optional[float]]]:
+        # returns mapping year -> {averageFare: x, adjFare: y}
+        years = set()
+        for c in group_cities:
+            years.update(by_city_year.get(c, {}).keys())
+        years = sorted(years)
+        out: Dict[int, Dict[str, Optional[float]]] = {}
+        for y in years:
+            fares: List[float] = []
+            adjs: List[float] = []
+            for c in group_cities:
+                rec = by_city_year.get(c, {}).get(y)
+                if rec:
+                    if rec.get("averageFare") is not None:
+                        fares.append(rec.get("averageFare"))
+                    if rec.get("2025Q2InflationAdjFare") is not None:
+                        adjs.append(rec.get("2025Q2InflationAdjFare"))
+            avg_fare = sum(fares) / len(fares) if fares else None
+            avg_adj = sum(adjs) / len(adjs) if adjs else None
+            out[y] = {"averageFare": avg_fare, "adjFare": avg_adj}
+        return out
+
+    big6 = ["Bozeman", "Missoula", "Billings", "Kalispell", "Great Falls", "Helena"]
+    big6_map = compute_group_avg(big6)
+
+    # write big-6 file
+    big6_path = out_base / "big-6-analysis.csv"
+    with big6_path.open("w", newline="", encoding="utf-8") as fh:
+        writer = csv.writer(fh)
+        writer.writerow([
+            "year",
+            "airportCode",
+            "City",
+            "averageFare",
+            "%YoYChange",
+            "%ChangeSince2020",
+            "2025Q2InflationAdjFare",
+            "%changeYoYInflationAdj",
+            "%changeSince2020InflationAdj",
+        ])
+        years = sorted(big6_map.keys())
+        for y in years:
+            avg_fare = big6_map[y]["averageFare"]
+            adj_fare = big6_map[y]["adjFare"]
+
+            # YoY
+            yoy = ""
+            if (y - 1) in big6_map and avg_fare is not None and big6_map[y - 1]["averageFare"] not in (None, 0):
+                prev = big6_map[y - 1]["averageFare"]
+                yoy = f"{(avg_fare - prev) / prev * 100.0:.2f}"
+
+            # since2020
+            since2020 = ""
+            if 2020 in big6_map and avg_fare is not None and big6_map[2020]["averageFare"] not in (None, 0):
+                base = big6_map[2020]["averageFare"]
+                since2020 = f"{(avg_fare - base) / base * 100.0:.2f}"
+
+            # inflation-adjusted YoY / since2020
+            yoy_infl = ""
+            since2020_infl = ""
+            if (y - 1) in big6_map and adj_fare is not None and big6_map[y - 1]["adjFare"] not in (None, 0):
+                prev_adj = big6_map[y - 1]["adjFare"]
+                yoy_infl = f"{(adj_fare - prev_adj) / prev_adj * 100.0:.2f}"
+            if 2020 in big6_map and adj_fare is not None and big6_map[2020]["adjFare"] not in (None, 0):
+                base_adj = big6_map[2020]["adjFare"]
+                since2020_infl = f"{(adj_fare - base_adj) / base_adj * 100.0:.2f}"
+
+            writer.writerow([
+                str(y),
+                "BIG6",
+                "Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",
+                f"{avg_fare:.2f}" if avg_fare is not None else "",
+                yoy,
+                since2020,
+                f"{adj_fare:.2f}" if adj_fare is not None else "",
+                yoy_infl,
+                since2020_infl,
+            ])
+
+    print(f"Wrote: {big6_path}")
 
 
 def write_city_files(rows: List[Dict[str, Any]], out_dir: Path) -> None:
@@ -132,6 +245,8 @@ def main() -> None:
         print("No valid rows found in input CSV")
         return
     write_city_files(rows, OUT_DIR)
+    # also write aggregate files (big-6 and national average)
+    write_aggregate(rows, OUT_DIR)
 
 
 if __name__ == "__main__":

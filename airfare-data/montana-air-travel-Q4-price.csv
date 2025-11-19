@@ -11,7 +11,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2020,406,GDV,Dawson Community,Glendive,245.33,303.04,29
 2020,409,OLF,L. M. Clayton,Wolf Point,309.00,381.68,19
 2020,412,HVR,Havre City-County,Havre,604.00,746.07,14
-2020,,,,National Average,,260.67,321.98,
+2020,,,,National Average,260.67,321.98,,
 2021,97,BZN,Bozeman Yellowstone International,Bozeman,361.33,418.34,56214
 2021,142,MSO,Missoula Montana,Missoula,450.77,521.89,25558
 2021,144,BIL,Billings Logan International,Billings,417.07,482.87,25278
@@ -24,7 +24,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2021,414,GDV,Dawson Community,Glendive,405.00,468.90,29
 2021,421,HVR,Havre City-County,Havre,531.25,615.07,14
 2021,422,GGW,Wokal Field Glasgow Valley County,Glasgow,443.71,513.72,12
-2022,,,,National Average,,327.13,378.75,
+2022,,,,National Average,327.13,378.75,,
 2022,97,BZN,Bozeman Yellowstone International,Bozeman,448.99,485.36,56214
 2022,142,MSO,Missoula Montana,Missoula,542.66,586.62,25558
 2022,144,BIL,Billings Logan International,Billings,527.74,570.49,25278
@@ -38,7 +38,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2022,417,OLF,L. M. Clayton,Wolf Point,523.50,565.91,19
 2022,421,HVR,Havre City-County,Havre,671.00,725.36,14
 2022,422,GGW,Wokal Field Glasgow Valley County,Glasgow,455.25,492.13,12
-2022,,,,National Average,,393.85,425.75,
+2022,,,,National Average,393.85,425.75,,
 2023,97,BZN,Bozeman Yellowstone International,Bozeman,446.68,467.70,56214
 2023,142,MSO,Missoula Montana,Missoula,556.54,582.72,25558
 2023,144,BIL,Billings Logan International,Billings,530.47,555.43,25278
@@ -52,7 +52,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2023,423,OLF,L. M. Clayton,Wolf Point,805.60,843.50,19
 2023,428,HVR,Havre City-County,Havre,903.00,945.48,14
 2023,429,GGW,Wokal Field Glasgow Valley County,Glasgow,680.50,712.52,12
-2023,,,,National Average,,384.85,402.98,
+2023,,,,National Average,384.85,402.98,,
 2024,97,BZN,Bozeman Yellowstone International,Bozeman,452.94,461.58,56214
 2024,142,MSO,Missoula Montana,Missoula,489.74,499.08,25558
 2024,144,BIL,Billings Logan International,Billings,482.53,491.74,25278
@@ -66,4 +66,4 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2024,426,OLF,L. M. Clayton,Wolf Point,246.50,251.20,19
 2024,431,HVR,Havre City-County,Havre,572.33,583.25,14
 2024,432,GGW,Wokal Field Glasgow Valley County,Glasgow,541.67,552.00,12
-2024,,,,National Average,,397.63,405.22,
+2024,,,,National Average,397.63,405.22,,

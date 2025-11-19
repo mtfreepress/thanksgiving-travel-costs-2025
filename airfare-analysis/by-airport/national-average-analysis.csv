@@ -1,0 +1,5 @@
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
+2020,NATIONAL,National Average,260.67,,0.00,321.98,,0.00
+2022,NATIONAL,National Average,393.85,,51.09,425.75,,32.23
+2023,NATIONAL,National Average,384.85,-2.29,47.64,402.98,-5.35,25.16
+2024,NATIONAL,National Average,397.63,3.32,52.54,405.22,0.56,25.85
