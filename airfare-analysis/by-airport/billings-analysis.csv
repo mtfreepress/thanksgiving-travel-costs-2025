@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,BIL,Billings,317.58,,0.00,392.28,,0.00
-2021,BIL,Billings,417.07,31.33,31.33,482.87,23.09,23.09
-2022,BIL,Billings,527.74,26.54,66.18,570.49,18.15,45.43
-2023,BIL,Billings,530.47,0.52,67.04,555.43,-2.64,41.59
-2024,BIL,Billings,482.53,-9.04,51.94,491.74,-11.47,25.35
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,BIL,Billings,435.93,,0.00,590.97,,0.00
+2016,BIL,Billings,432.47,-0.79,-0.79,575.91,-2.55,-2.55
+2017,BIL,Billings,463.98,7.29,6.43,605.07,5.06,2.39
+2018,BIL,Billings,464.29,0.07,6.51,592.41,-2.09,0.24
+2019,BIL,Billings,440.33,-5.16,1.01,550.64,-7.05,-6.82
+2020,BIL,Billings,317.58,-27.88,-27.15,392.28,-28.76,-33.62
+2021,BIL,Billings,417.07,31.33,-4.33,482.87,23.09,-18.29
+2022,BIL,Billings,527.74,26.54,21.06,570.49,18.15,-3.47
+2023,BIL,Billings,530.47,0.52,21.69,555.43,-2.64,-6.01
+2024,BIL,Billings,482.53,-9.04,10.69,491.74,-11.47,-16.79

@@ -23,6 +23,11 @@ THANKSGIVING: Dict[int, date] = {
 
 # inflation factors to convert amounts in year -> 2025 Q2 dollars
 INFLATION_FACTORS: Dict[int, float] = {
+	2015: 1.35565,
+	2016: 1.33169,
+	2017: 1.30407,
+	2018: 1.27597,
+	2019: 1.25052,
     2020: 1.2352,
     2021: 1.1578,
     2022: 1.081,

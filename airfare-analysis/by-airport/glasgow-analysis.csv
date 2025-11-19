@@ -1,5 +1,10 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2021,GGW,Glasgow,443.71,,,513.72,,
-2022,GGW,Glasgow,455.25,2.60,,492.13,-4.20,
-2023,GGW,Glasgow,680.50,49.48,,712.52,44.78,
-2024,GGW,Glasgow,541.67,-20.40,,552.00,-22.53,
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,GGW,Glasgow,592.67,,0.00,803.45,,0.00
+2016,GGW,Glasgow,735.00,24.02,24.02,978.78,21.82,21.82
+2017,GGW,Glasgow,487.50,-33.67,-17.75,635.73,-35.05,-20.87
+2018,GGW,Glasgow,615.78,26.31,3.90,785.70,23.59,-2.21
+2019,GGW,Glasgow,366.00,-40.56,-38.25,457.69,-41.75,-43.03
+2021,GGW,Glasgow,443.71,,-25.13,513.72,,-36.06
+2022,GGW,Glasgow,455.25,2.60,-23.19,492.13,-4.20,-38.75
+2023,GGW,Glasgow,680.50,49.48,14.82,712.52,44.78,-11.32
+2024,GGW,Glasgow,541.67,-20.40,-8.61,552.00,-22.53,-31.30

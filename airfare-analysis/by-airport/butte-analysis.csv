@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,BTM,Butte,422.29,,0.00,521.62,,0.00
-2021,BTM,Butte,550.48,30.36,30.36,637.33,22.18,22.18
-2022,BTM,Butte,625.75,13.67,48.18,676.44,6.14,29.68
-2023,BTM,Butte,641.49,2.52,51.91,671.67,-0.71,28.77
-2024,BTM,Butte,631.57,-1.55,49.56,643.61,-4.18,23.39
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,BTM,Butte,513.79,,0.00,696.52,,0.00
+2016,BTM,Butte,516.08,0.45,0.45,687.25,-1.33,-1.33
+2017,BTM,Butte,519.91,0.74,1.19,678.00,-1.35,-2.66
+2018,BTM,Butte,544.49,4.73,5.98,694.74,2.47,-0.26
+2019,BTM,Butte,514.33,-5.54,0.11,643.19,-7.42,-7.66
+2020,BTM,Butte,422.29,-17.90,-17.81,521.62,-18.90,-25.11
+2021,BTM,Butte,550.48,30.36,7.14,637.33,22.18,-8.50
+2022,BTM,Butte,625.75,13.67,21.79,676.44,6.14,-2.88
+2023,BTM,Butte,641.49,2.52,24.85,671.67,-0.71,-3.57
+2024,BTM,Butte,631.57,-1.55,22.92,643.61,-4.18,-7.60

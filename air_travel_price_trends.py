@@ -110,10 +110,10 @@ def write_aggregate(rows: List[Dict[str, Any]], out_dir: Path) -> None:
             "City",
             "averageFare",
             "%YoYChange",
-            "%ChangeSince2020",
+            "%ChangeSince2015",
             "2025Q2InflationAdjFare",
             "%changeYoYInflationAdj",
-            "%changeSince2020InflationAdj",
+            "%changeSince2015InflationAdj",
         ])
         years = sorted(big6_map.keys())
         for y in years:
@@ -126,21 +126,21 @@ def write_aggregate(rows: List[Dict[str, Any]], out_dir: Path) -> None:
                 prev = big6_map[y - 1]["averageFare"]
                 yoy = f"{(avg_fare - prev) / prev * 100.0:.2f}"
 
-            # since2020
-            since2020 = ""
-            if 2020 in big6_map and avg_fare is not None and big6_map[2020]["averageFare"] not in (None, 0):
-                base = big6_map[2020]["averageFare"]
-                since2020 = f"{(avg_fare - base) / base * 100.0:.2f}"
+            # since2015
+            since2015 = ""
+            if 2015 in big6_map and avg_fare is not None and big6_map[2015]["averageFare"] not in (None, 0):
+                base = big6_map[2015]["averageFare"]
+                since2015 = f"{(avg_fare - base) / base * 100.0:.2f}"
 
-            # inflation-adjusted YoY / since2020
+            # inflation-adjusted YoY / since2015
             yoy_infl = ""
-            since2020_infl = ""
+            since2015_infl = ""
             if (y - 1) in big6_map and adj_fare is not None and big6_map[y - 1]["adjFare"] not in (None, 0):
                 prev_adj = big6_map[y - 1]["adjFare"]
                 yoy_infl = f"{(adj_fare - prev_adj) / prev_adj * 100.0:.2f}"
-            if 2020 in big6_map and adj_fare is not None and big6_map[2020]["adjFare"] not in (None, 0):
-                base_adj = big6_map[2020]["adjFare"]
-                since2020_infl = f"{(adj_fare - base_adj) / base_adj * 100.0:.2f}"
+            if 2015 in big6_map and adj_fare is not None and big6_map[2015]["adjFare"] not in (None, 0):
+                base_adj = big6_map[2015]["adjFare"]
+                since2015_infl = f"{(adj_fare - base_adj) / base_adj * 100.0:.2f}"
 
             writer.writerow([
                 str(y),
@@ -148,10 +148,10 @@ def write_aggregate(rows: List[Dict[str, Any]], out_dir: Path) -> None:
                 "Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",
                 f"{avg_fare:.2f}" if avg_fare is not None else "",
                 yoy,
-                since2020,
+                since2015,
                 f"{adj_fare:.2f}" if adj_fare is not None else "",
                 yoy_infl,
-                since2020_infl,
+                since2015_infl,
             ])
 
     print(f"Wrote: {big6_path}")
@@ -182,10 +182,10 @@ def write_city_files(rows: List[Dict[str, Any]], out_dir: Path) -> None:
                 "City",
                 "averageFare",
                 "%YoYChange",
-                "%ChangeSince2020",
+                "%ChangeSince2015",
                 "2025Q2InflationAdjFare",
                 "%changeYoYInflationAdj",
-                "%changeSince2020InflationAdj",
+                "%changeSince2015InflationAdj",
             ])
 
             for y in years:
@@ -201,25 +201,25 @@ def write_city_files(rows: List[Dict[str, Any]], out_dir: Path) -> None:
                     yoy = (avg_fare - prev_avg) / prev_avg * 100.0
                     yoy_str = f"{yoy:.2f}"
 
-                # since 2020 percent change
-                since2020_str = ""
-                base2020 = recs_by_year.get(2020)
-                if base2020 and avg_fare is not None and base2020.get("averageFare") not in (None, 0):
-                    base_avg = base2020.get("averageFare")
-                    since2020 = (avg_fare - base_avg) / base_avg * 100.0
-                    since2020_str = f"{since2020:.2f}"
+                # since 2015 percent change
+                since2015_str = ""
+                base2015 = recs_by_year.get(2015)
+                if base2015 and avg_fare is not None and base2015.get("averageFare") not in (None, 0):
+                    base_avg = base2015.get("averageFare")
+                    since2015 = (avg_fare - base_avg) / base_avg * 100.0
+                    since2015_str = f"{since2015:.2f}"
 
-                # inflation-adjusted YoY and since-2020 use provided adj_fare when available
+                # inflation-adjusted YoY and since-2015 use provided adj_fare when available
                 yoy_infl_str = ""
-                since2020_infl_str = ""
+                since2015_infl_str = ""
                 if prev and adj_fare is not None and prev.get("2025Q2InflationAdjFare") not in (None, 0):
                     prev_adj = prev.get("2025Q2InflationAdjFare")
                     yoy_infl = (adj_fare - prev_adj) / prev_adj * 100.0
                     yoy_infl_str = f"{yoy_infl:.2f}"
-                if base2020 and adj_fare is not None and base2020.get("2025Q2InflationAdjFare") not in (None, 0):
-                    base_adj = base2020.get("2025Q2InflationAdjFare")
-                    since2020_infl = (adj_fare - base_adj) / base_adj * 100.0
-                    since2020_infl_str = f"{since2020_infl:.2f}"
+                if base2015 and adj_fare is not None and base2015.get("2025Q2InflationAdjFare") not in (None, 0):
+                    base_adj = base2015.get("2025Q2InflationAdjFare")
+                    since2015_infl = (adj_fare - base_adj) / base_adj * 100.0
+                    since2015_infl_str = f"{since2015_infl:.2f}"
 
                 writer.writerow([
                     str(y),
@@ -227,10 +227,10 @@ def write_city_files(rows: List[Dict[str, Any]], out_dir: Path) -> None:
                     city,
                     f"{avg_fare:.2f}" if avg_fare is not None else "",
                     yoy_str,
-                    since2020_str,
+                    since2015_str,
                     f"{adj_fare:.2f}" if adj_fare is not None else "",
                     yoy_infl_str,
-                    since2020_infl_str,
+                    since2015_infl_str,
                 ])
 
         print(f"Wrote: {out_path}")

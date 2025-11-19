@@ -1,0 +1,9 @@
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2023,MSO,Missoula,556.54,2.56,28.22,582.72,-0.66,-0.97
+2023,BIL,Billings,530.47,0.52,21.69,555.43,-2.64,-6.01
+2023,BZN,Bozeman,446.68,-0.51,0.46,467.70,-3.64,-22.41
+2023,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",524.71,-2.01,18.55,549.39,-5.09,-8.44
+2023,NATIONAL,National Average,384.85,-2.29,6.22,402.98,-5.35,-17.96
+2023,FCA,Kalispell,533.25,-3.64,18.36,558.34,-6.67,-8.58
+2023,HLN,Helena,608.23,-4.46,18.57,636.85,-7.46,-8.42
+2023,GTF,Great Falls,473.07,-6.05,25.32,495.33,-9.01,-3.21

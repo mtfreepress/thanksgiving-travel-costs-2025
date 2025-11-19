@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,GTF,Great Falls,341.65,,0.00,422.02,,0.00
-2021,GTF,Great Falls,433.66,26.93,26.93,502.08,18.97,18.97
-2022,GTF,Great Falls,503.55,16.12,47.39,544.35,8.42,28.99
-2023,GTF,Great Falls,473.07,-6.05,38.47,495.33,-9.01,17.37
-2024,GTF,Great Falls,485.66,2.66,42.15,494.93,-0.08,17.28
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,GTF,Great Falls,377.49,,0.00,511.75,,0.00
+2016,GTF,Great Falls,380.21,0.72,0.72,506.32,-1.06,-1.06
+2017,GTF,Great Falls,423.57,11.40,12.21,552.36,9.09,7.94
+2018,GTF,Great Falls,416.54,-1.66,10.34,531.48,-3.78,3.86
+2019,GTF,Great Falls,418.90,0.57,10.97,523.84,-1.44,2.36
+2020,GTF,Great Falls,341.65,-18.44,-9.49,422.02,-19.44,-17.53
+2021,GTF,Great Falls,433.66,26.93,14.88,502.08,18.97,-1.89
+2022,GTF,Great Falls,503.55,16.12,33.39,544.35,8.42,6.37
+2023,GTF,Great Falls,473.07,-6.05,25.32,495.33,-9.01,-3.21
+2024,GTF,Great Falls,485.66,2.66,28.66,494.93,-0.08,-3.29

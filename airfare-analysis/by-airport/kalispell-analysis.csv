@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,FCA,Kalispell,349.04,,0.00,431.14,,0.00
-2021,FCA,Kalispell,437.12,25.23,25.23,506.09,17.38,17.38
-2022,FCA,Kalispell,553.40,26.60,58.55,598.23,18.21,38.76
-2023,FCA,Kalispell,533.25,-3.64,52.78,558.34,-6.67,29.50
-2024,FCA,Kalispell,505.35,-5.23,44.78,514.99,-7.76,19.45
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,FCA,Kalispell,450.53,,0.00,610.77,,0.00
+2016,FCA,Kalispell,444.12,-1.42,-1.42,591.42,-3.17,-3.17
+2017,FCA,Kalispell,472.73,6.44,4.93,616.48,4.24,0.93
+2018,FCA,Kalispell,458.92,-2.92,1.86,585.57,-5.01,-4.13
+2019,FCA,Kalispell,429.94,-6.31,-4.57,537.65,-8.18,-11.97
+2020,FCA,Kalispell,349.04,-18.82,-22.53,431.14,-19.81,-29.41
+2021,FCA,Kalispell,437.12,25.23,-2.98,506.09,17.38,-17.14
+2022,FCA,Kalispell,553.40,26.60,22.83,598.23,18.21,-2.05
+2023,FCA,Kalispell,533.25,-3.64,18.36,558.34,-6.67,-8.58
+2024,FCA,Kalispell,505.35,-5.23,12.17,514.99,-7.76,-15.68

@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,HLN,Helena,405.50,,0.00,500.89,,0.00
-2021,HLN,Helena,504.34,24.37,24.37,583.92,16.58,16.58
-2022,HLN,Helena,636.62,26.23,57.00,688.19,17.86,37.39
-2023,HLN,Helena,608.23,-4.46,50.00,636.85,-7.46,27.14
-2024,HLN,Helena,595.48,-2.10,46.85,606.84,-4.71,21.15
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,HLN,Helena,512.97,,0.00,695.42,,0.00
+2016,HLN,Helena,517.41,0.87,0.87,689.02,-0.92,-0.92
+2017,HLN,Helena,505.05,-2.39,-1.54,658.62,-4.41,-5.29
+2018,HLN,Helena,493.12,-2.36,-3.87,629.19,-4.47,-9.52
+2019,HLN,Helena,491.35,-0.36,-4.21,614.45,-2.34,-11.64
+2020,HLN,Helena,405.50,-17.47,-20.95,500.89,-18.48,-27.97
+2021,HLN,Helena,504.34,24.37,-1.68,583.92,16.58,-16.03
+2022,HLN,Helena,636.62,26.23,24.10,688.19,17.86,-1.04
+2023,HLN,Helena,608.23,-4.46,18.57,636.85,-7.46,-8.42
+2024,HLN,Helena,595.48,-2.10,16.08,606.84,-4.71,-12.74

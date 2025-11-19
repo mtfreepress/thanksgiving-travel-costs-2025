@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",342.85,,0.00,423.50,,0.00
-2021,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",434.05,26.60,26.60,502.53,18.66,18.66
-2022,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",535.49,23.37,56.19,578.87,15.19,36.69
-2023,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",524.71,-2.01,53.04,549.39,-5.09,29.73
-2024,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",501.95,-4.34,46.41,511.53,-6.89,20.79
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",442.60,,0.00,600.02,,0.00
+2016,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",439.15,-0.78,-0.78,584.80,-2.54,-2.54
+2017,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",467.67,6.49,5.66,609.87,4.29,1.64
+2018,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",446.78,-4.47,0.94,570.07,-6.53,-4.99
+2019,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",439.25,-1.69,-0.76,549.29,-3.65,-8.45
+2020,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",342.85,-21.95,-22.54,423.50,-22.90,-29.42
+2021,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",434.05,26.60,-1.93,502.53,18.66,-16.25
+2022,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",535.49,23.37,20.99,578.87,15.19,-3.52
+2023,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",524.71,-2.01,18.55,549.39,-5.09,-8.44
+2024,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",501.95,-4.34,13.41,511.53,-6.89,-14.75

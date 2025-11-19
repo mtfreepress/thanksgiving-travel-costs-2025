@@ -1,6 +1,11 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,GDV,Glendive,245.33,,0.00,303.04,,0.00
-2021,GDV,Glendive,405.00,65.08,65.08,468.90,54.73,54.73
-2022,GDV,Glendive,721.78,78.22,194.21,780.25,66.40,157.47
-2023,GDV,Glendive,365.00,-49.43,48.78,382.17,-51.02,26.11
-2024,GDV,Glendive,478.00,30.96,94.84,487.12,27.46,60.74
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2015,GDV,Glendive,589.25,,0.00,798.82,,0.00
+2016,GDV,Glendive,499.67,-15.20,-15.20,665.40,-16.70,-16.70
+2017,GDV,Glendive,865.25,73.16,46.84,1128.34,69.57,41.25
+2018,GDV,Glendive,606.00,-29.96,2.84,773.23,-31.47,-3.20
+2019,GDV,Glendive,552.80,-8.78,-6.19,691.29,-10.60,-13.46
+2020,GDV,Glendive,245.33,-55.62,-58.37,303.04,-56.16,-62.06
+2021,GDV,Glendive,405.00,65.08,-31.27,468.90,54.73,-41.30
+2022,GDV,Glendive,721.78,78.22,22.49,780.25,66.40,-2.32
+2023,GDV,Glendive,365.00,-49.43,-38.06,382.17,-51.02,-52.16
+2024,GDV,Glendive,478.00,30.96,-18.88,487.12,27.46,-39.02

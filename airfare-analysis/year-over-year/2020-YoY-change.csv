@@ -1,0 +1,9 @@
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2020,HLN,Helena,405.50,-17.47,-20.95,500.89,-18.48,-27.97
+2020,GTF,Great Falls,341.65,-18.44,-9.49,422.02,-19.44,-17.53
+2020,FCA,Kalispell,349.04,-18.82,-22.53,431.14,-19.81,-29.41
+2020,BIG6,"Big 6 (Bozeman,Missoula,Billings,Kalispell,Great Falls,Helena)",342.85,-21.95,-22.54,423.50,-22.90,-29.42
+2020,MSO,Missoula,318.22,-24.27,-26.68,393.08,-25.19,-33.20
+2020,BZN,Bozeman,325.10,-25.23,-26.89,401.57,-26.14,-33.38
+2020,NATIONAL,National Average,260.67,-26.88,-28.05,321.98,-27.78,-34.45
+2020,BIL,Billings,317.58,-27.88,-27.15,392.28,-28.76,-33.62

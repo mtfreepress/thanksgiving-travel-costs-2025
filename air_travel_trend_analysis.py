@@ -8,8 +8,8 @@ from typing import List, Dict, Optional
 BY_AIRPORT_DIR = Path("airfare-analysis/by-airport")
 AGGREGATE_FILE = Path("airfare-analysis/aggregate/big-6-analysis.csv")
 
-YEAR_YOY_DIR = Path("airfare-analysis/year-over-yeear")
-YEAR_SINCE_DIR = Path("airfare-analysis/since-2020")
+YEAR_YOY_DIR = Path("airfare-analysis/year-over-year")
+YEAR_SINCE_DIR = Path("airfare-analysis/since-2015")
 
 # Entities to include (big 6 cities) - filenames created earlier
 BIG6_FILES = [
@@ -24,7 +24,7 @@ BIG6_FILES = [
 # include national average (present under by-airport) and the aggregate file
 NATIONAL_FILE = "national-average-analysis.csv"
 
-YEARS = [2021, 2022, 2023, 2024]
+YEARS = [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]
 
 
 def read_csv_rows(path: Path) -> List[Dict[str, str]]:
@@ -93,10 +93,10 @@ def write_sorted_for_year(rows: List[Dict[str, str]], year: int) -> None:
                 "City",
                 "averageFare",
                 "%YoYChange",
-                "%ChangeSince2020",
+                "%ChangeSince2015",
                 "2025Q2InflationAdjFare",
                 "%changeYoYInflationAdj",
-                "%changeSince2020InflationAdj",
+                "%changeSince2015InflationAdj",
             ]
             writer.writerow(header)
             for r in rows_y_yoy_sorted:
@@ -106,20 +106,20 @@ def write_sorted_for_year(rows: List[Dict[str, str]], year: int) -> None:
                     r.get("City", ""),
                     r.get("averageFare", ""),
                     r.get("%YoYChange", ""),
-                    r.get("%ChangeSince2020", ""),
+                    r.get("%ChangeSince2015", ""),
                     r.get("2025Q2InflationAdjFare", ""),
                     r.get("%changeYoYInflationAdj", ""),
-                    r.get("%changeSince2020InflationAdj", ""),
+                    r.get("%changeSince2015InflationAdj", ""),
                 ])
     print(f"Wrote: {out_yoy}")
 
-    # prepare since-2020 file sorted by %changeSince2020InflationAdj (descending)
+    # prepare since-2015 file sorted by %changeSince2015InflationAdj (descending)
     def key_since(r: Dict[str, str]) -> float:
-        v = float_or_none(r.get("%changeSince2020InflationAdj", ""))
+        v = float_or_none(r.get("%changeSince2015InflationAdj", ""))
         return v if v is not None else float("-inf")
 
     rows_y_since_sorted = sorted(rows_y, key=key_since, reverse=True)
-    out_since = YEAR_SINCE_DIR / f"{year}-since-2020-change.csv"
+    out_since = YEAR_SINCE_DIR / f"{year}-since-2015-change.csv"
     if rows_y_since_sorted:
         with out_since.open("w", newline="", encoding="utf-8") as fh:
             writer = csv.writer(fh)
@@ -129,10 +129,10 @@ def write_sorted_for_year(rows: List[Dict[str, str]], year: int) -> None:
                 "City",
                 "averageFare",
                 "%YoYChange",
-                "%ChangeSince2020",
+                "%ChangeSince2015",
                 "2025Q2InflationAdjFare",
                 "%changeYoYInflationAdj",
-                "%changeSince2020InflationAdj",
+                "%changeSince2015InflationAdj",
             ]
             writer.writerow(header)
             for r in rows_y_since_sorted:
@@ -142,10 +142,10 @@ def write_sorted_for_year(rows: List[Dict[str, str]], year: int) -> None:
                     r.get("City", ""),
                     r.get("averageFare", ""),
                     r.get("%YoYChange", ""),
-                    r.get("%ChangeSince2020", ""),
+                    r.get("%ChangeSince2015", ""),
                     r.get("2025Q2InflationAdjFare", ""),
                     r.get("%changeYoYInflationAdj", ""),
-                    r.get("%changeSince2020InflationAdj", ""),
+                    r.get("%changeSince2015InflationAdj", ""),
                 ])
     print(f"Wrote: {out_since}")
 

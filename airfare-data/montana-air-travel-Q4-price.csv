@@ -1,4 +1,70 @@
 year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare,passengers2024
+2015,97,BZN,Bozeman Yellowstone International,Bozeman,444.65,602.79,56214
+2015,142,MSO,Missoula Montana,Missoula,434.04,588.41,25558
+2015,144,BIL,Billings Logan International,Billings,435.93,590.97,25278
+2015,150,FCA,Glacier Park International,Kalispell,450.53,610.77,21498
+2015,187,GTF,Great Falls International,Great Falls,377.49,511.75,10663
+2015,218,HLN,Helena Regional,Helena,512.97,695.42,5609
+2015,321,BTM,Bert Mooney,Butte,513.79,696.52,907
+2015,373,SDY,Sidney Richland Regional,Sidney,486.46,659.48,67
+2015,383,GDV,Dawson Community,Glendive,589.25,798.82,29
+2015,384,OLF,L. M. Clayton,Wolf Point,421.50,571.41,19
+2015,387,HVR,Havre City-County,Havre,505.50,685.29,14
+2015,388,GGW,Wokal Field Glasgow Valley County,Glasgow,592.67,803.45,12
+2015,,,,National Average,362.31,491.17,
+2016,97,BZN,Bozeman Yellowstone International,Bozeman,454.31,605.00,56214
+2016,142,MSO,Missoula Montana,Missoula,406.36,541.14,25558
+2016,144,BIL,Billings Logan International,Billings,432.47,575.91,25278
+2016,150,FCA,Glacier Park International,Kalispell,444.12,591.42,21498
+2016,187,GTF,Great Falls International,Great Falls,380.21,506.32,10663
+2016,218,HLN,Helena Regional,Helena,517.41,689.02,5609
+2016,322,BTM,Bert Mooney,Butte,516.08,687.25,907
+2016,373,SDY,Sidney Richland Regional,Sidney,504.64,672.02,67
+2016,383,GDV,Dawson Community,Glendive,499.67,665.40,29
+2016,384,OLF,L. M. Clayton,Wolf Point,535.14,712.64,19
+2016,387,HVR,Havre City-County,Havre,626.50,834.30,14
+2016,388,GGW,Wokal Field Glasgow Valley County,Glasgow,735.00,978.78,12
+2016,,,,National Average,346.72,461.72,
+2017,97,BZN,Bozeman Yellowstone International,Bozeman,484.33,631.60,56214
+2017,142,MSO,Missoula Montana,Missoula,456.34,595.10,25558
+2017,144,BIL,Billings Logan International,Billings,463.98,605.07,25278
+2017,150,FCA,Glacier Park International,Kalispell,472.73,616.48,21498
+2017,187,GTF,Great Falls International,Great Falls,423.57,552.36,10663
+2017,219,HLN,Helena Regional,Helena,505.05,658.62,5609
+2017,322,BTM,Bert Mooney,Butte,519.91,678.00,907
+2017,373,SDY,Sidney Richland Regional,Sidney,519.31,677.22,67
+2017,385,GDV,Dawson Community,Glendive,865.25,1128.34,29
+2017,387,OLF,L. M. Clayton,Wolf Point,563.00,734.19,19
+2017,390,HVR,Havre City-County,Havre,470.00,612.91,14
+2017,391,GGW,Wokal Field Glasgow Valley County,Glasgow,487.50,635.73,12
+2017,,,,National Average,347.33,452.94,
+2018,97,BZN,Bozeman Yellowstone International,Bozeman,441.03,562.74,56214
+2018,142,MSO,Missoula Montana,Missoula,406.79,519.05,25558
+2018,144,BIL,Billings Logan International,Billings,464.29,592.41,25278
+2018,150,FCA,Glacier Park International,Kalispell,458.92,585.57,21498
+2018,187,GTF,Great Falls International,Great Falls,416.54,531.48,10663
+2018,219,HLN,Helena Regional,Helena,493.12,629.19,5609
+2018,322,BTM,Bert Mooney,Butte,544.49,694.74,907
+2018,384,SDY,Sidney Richland Regional,Sidney,547.50,698.59,67
+2018,397,GDV,Dawson Community,Glendive,606.00,773.23,29
+2018,399,OLF,L. M. Clayton,Wolf Point,620.40,791.60,19
+2018,403,HVR,Havre City-County,Havre,577.00,736.23,14
+2018,404,GGW,Wokal Field Glasgow Valley County,Glasgow,615.78,785.70,12
+2018,,,,National Average,359.3,458.46,
+2019,97,BZN,Bozeman Yellowstone International,Bozeman,434.78,543.70,56214
+2019,142,MSO,Missoula Montana,Missoula,420.19,525.47,25558
+2019,144,BIL,Billings Logan International,Billings,440.33,550.64,25278
+2019,150,FCA,Glacier Park International,Kalispell,429.94,537.65,21498
+2019,188,GTF,Great Falls International,Great Falls,418.90,523.84,10663
+2019,221,HLN,Helena Regional,Helena,491.35,614.45,5609
+2019,326,BTM,Bert Mooney,Butte,514.33,643.19,907
+2109,362,WYS,Yellowstone,West Yellowstone,369.43,461.98,259
+2019,396,SDY,Sidney Richland Regional,Sidney,496.33,620.68,67
+2019,411,GDV,Dawson Community,Glendive,552.80,691.29,29
+2019,414,OLF,L. M. Clayton,Wolf Point,380.00,475.20,19
+2019,418,HVR,Havre City-County,Havre,424.50,530.85,14
+2019,419,GGW,Wokal Field Glasgow Valley County,Glasgow,366.00,457.69,12
+2019,,,,National Average,356.52,445.84,
 2020,97,BZN,Bozeman Yellowstone International,Bozeman,325.10,401.57,56214
 2020,142,MSO,Missoula Montana,Missoula,318.22,393.08,25558
 2020,144,BIL,Billings Logan International,Billings,317.58,392.28,25278
@@ -11,7 +77,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2020,406,GDV,Dawson Community,Glendive,245.33,303.04,29
 2020,409,OLF,L. M. Clayton,Wolf Point,309.00,381.68,19
 2020,412,HVR,Havre City-County,Havre,604.00,746.07,14
-2020,,,,National Average,260.67,321.98,,
+2020,,,,National Average,260.67,321.98,
 2021,97,BZN,Bozeman Yellowstone International,Bozeman,361.33,418.34,56214
 2021,142,MSO,Missoula Montana,Missoula,450.77,521.89,25558
 2021,144,BIL,Billings Logan International,Billings,417.07,482.87,25278
@@ -24,7 +90,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2021,414,GDV,Dawson Community,Glendive,405.00,468.90,29
 2021,421,HVR,Havre City-County,Havre,531.25,615.07,14
 2021,422,GGW,Wokal Field Glasgow Valley County,Glasgow,443.71,513.72,12
-2022,,,,National Average,327.13,378.75,,
+2022,,,,National Average,327.13,378.75,
 2022,97,BZN,Bozeman Yellowstone International,Bozeman,448.99,485.36,56214
 2022,142,MSO,Missoula Montana,Missoula,542.66,586.62,25558
 2022,144,BIL,Billings Logan International,Billings,527.74,570.49,25278
@@ -38,7 +104,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2022,417,OLF,L. M. Clayton,Wolf Point,523.50,565.91,19
 2022,421,HVR,Havre City-County,Havre,671.00,725.36,14
 2022,422,GGW,Wokal Field Glasgow Valley County,Glasgow,455.25,492.13,12
-2022,,,,National Average,393.85,425.75,,
+2022,,,,National Average,393.85,425.75,
 2023,97,BZN,Bozeman Yellowstone International,Bozeman,446.68,467.70,56214
 2023,142,MSO,Missoula Montana,Missoula,556.54,582.72,25558
 2023,144,BIL,Billings Logan International,Billings,530.47,555.43,25278
@@ -52,7 +118,7 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2023,423,OLF,L. M. Clayton,Wolf Point,805.60,843.50,19
 2023,428,HVR,Havre City-County,Havre,903.00,945.48,14
 2023,429,GGW,Wokal Field Glasgow Valley County,Glasgow,680.50,712.52,12
-2023,,,,National Average,384.85,402.98,,
+2023,,,,National Average,384.85,402.98,
 2024,97,BZN,Bozeman Yellowstone International,Bozeman,452.94,461.58,56214
 2024,142,MSO,Missoula Montana,Missoula,489.74,499.08,25558
 2024,144,BIL,Billings Logan International,Billings,482.53,491.74,25278
@@ -66,4 +132,4 @@ year,passengeRank2024,aiportCode,airport,city,averageFare,2025Q2InflationAdjFare
 2024,426,OLF,L. M. Clayton,Wolf Point,246.50,251.20,19
 2024,431,HVR,Havre City-County,Havre,572.33,583.25,14
 2024,432,GGW,Wokal Field Glasgow Valley County,Glasgow,541.67,552.00,12
-2024,,,,National Average,397.63,405.22,,
+2024,,,,National Average,397.63,405.22,

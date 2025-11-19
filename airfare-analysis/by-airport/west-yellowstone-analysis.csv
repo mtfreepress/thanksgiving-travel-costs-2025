@@ -1,6 +1,7 @@
-year,airportCode,City,averageFare,%YoYChange,%ChangeSince2020,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2020InflationAdj
-2020,WYS,West Yellowstone,282.25,,0.00,348.64,,0.00
-2021,WYS,West Yellowstone,292.91,3.78,3.78,339.12,-2.73,-2.73
-2022,WYS,West Yellowstone,519.56,77.38,84.08,561.64,65.62,61.09
-2023,WYS,West Yellowstone,541.13,4.15,91.72,566.59,0.88,62.51
-2024,WYS,West Yellowstone,412.00,-23.86,45.97,419.86,-25.90,20.43
+year,airportCode,City,averageFare,%YoYChange,%ChangeSince2015,2025Q2InflationAdjFare,%changeYoYInflationAdj,%changeSince2015InflationAdj
+2020,WYS,West Yellowstone,282.25,,,348.64,,
+2021,WYS,West Yellowstone,292.91,3.78,,339.12,-2.73,
+2022,WYS,West Yellowstone,519.56,77.38,,561.64,65.62,
+2023,WYS,West Yellowstone,541.13,4.15,,566.59,0.88,
+2024,WYS,West Yellowstone,412.00,-23.86,,419.86,-25.90,
+2109,WYS,West Yellowstone,369.43,,,461.98,,
