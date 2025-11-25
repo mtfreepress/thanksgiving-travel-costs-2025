@@ -6,6 +6,10 @@
 - Excel sheets processed by hand to extract just Montana airports. Raw excel sheets are in [airfare-data-excel-sheets](airfare-data-excel-sheets)
 - Cleaned data in [airfare-data](airfare-data)
 
+# _Notes_
+- `air_travel_price_trends.py` should be run first
+= `air_travel_trend_analysis.py` depends on data from price_trends so run it second
+
 ### Gasoline cost:
 - Takes data from [GasBuddy.com](https://gasbuddy.com)
 - Data in [gas-analysis](gas-analysis)

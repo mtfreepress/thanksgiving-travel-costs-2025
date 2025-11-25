@@ -10,6 +10,8 @@ AGGREGATE_FILE = Path("airfare-analysis/aggregate/big-6-analysis.csv")
 
 YEAR_YOY_DIR = Path("airfare-analysis/year-over-year")
 YEAR_SINCE_DIR = Path("airfare-analysis/since-2015")
+YEAR_SINCE_2020_DIR = Path("airfare-analysis/since-2020")
+YEAR_SINCE_2019_DIR = Path("airfare-analysis/since-2019")
 
 # Entities to include (big 6 cities) - filenames created earlier
 BIG6_FILES = [
@@ -70,6 +72,8 @@ def collect_entities() -> List[Dict[str, str]]:
 def make_dirs() -> None:
     YEAR_YOY_DIR.mkdir(parents=True, exist_ok=True)
     YEAR_SINCE_DIR.mkdir(parents=True, exist_ok=True)
+    YEAR_SINCE_2020_DIR.mkdir(parents=True, exist_ok=True)
+    YEAR_SINCE_2019_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def write_sorted_for_year(rows: List[Dict[str, str]], year: int) -> None:
@@ -150,6 +154,156 @@ def write_sorted_for_year(rows: List[Dict[str, str]], year: int) -> None:
     print(f"Wrote: {out_since}")
 
 
+def write_since_2020(rows: List[Dict[str, str]]) -> None:
+    """Write per-year files (years after 2020) with change since 2020 columns.
+
+    Files are written to `airfare-analysis/since-2020/{year}-since-2020-change.csv`.
+    """
+    # build mapping entity -> year -> record
+    by_entity: Dict[str, Dict[int, Dict[str, str]]] = {}
+    years_set = set()
+    for r in rows:
+        code = r.get("airportCode", "")
+        city = r.get("City", "")
+        key = f"{code}|{city}"
+        y = int(r.get("year") or 0)
+        years_set.add(y)
+        by_entity.setdefault(key, {})[y] = r
+
+    target_years = sorted(y for y in years_set if y > 2020)
+    if not target_years:
+        return
+
+    for year in target_years:
+        out_path = YEAR_SINCE_2020_DIR / f"{year}-since-2020-change.csv"
+        with out_path.open("w", newline="", encoding="utf-8") as fh:
+            writer = csv.writer(fh)
+            writer.writerow([
+                "year",
+                "airportCode",
+                "City",
+                "averageFare",
+                "%YoYChange",
+                "%ChangeSince2020",
+                "2025Q2InflationAdjFare",
+                "%changeYoYInflationAdj",
+                "%changeSince2020InflationAdj",
+            ])
+
+            # iterate entities and write row if entity has record for this year
+            for key, recs in sorted(by_entity.items()):
+                code, city = key.split("|", 1)
+                rec = recs.get(year)
+                if not rec:
+                    continue
+
+                avg = float_or_none(rec.get("averageFare"))
+                adj = float_or_none(rec.get("2025Q2InflationAdjFare"))
+
+                # %ChangeSince2020
+                since2020 = ""
+                base2020_rec = recs.get(2020)
+                base2020 = float_or_none(base2020_rec.get("averageFare")) if base2020_rec else None
+                if base2020 not in (None, 0) and avg is not None:
+                    since2020 = f"{(avg - base2020) / base2020 * 100.0:.2f}"
+
+                # inflation-adjusted %changeSince2020
+                since2020_infl = ""
+                if base2020_rec and adj is not None:
+                    base_adj = float_or_none(base2020_rec.get("2025Q2InflationAdjFare"))
+                    if base_adj not in (None, 0):
+                        since2020_infl = f"{(adj - base_adj) / base_adj * 100.0:.2f}"
+
+                writer.writerow([
+                    str(year),
+                    code,
+                    city,
+                    f"{avg:.2f}" if avg is not None else "",
+                    rec.get("%YoYChange", ""),
+                    since2020,
+                    f"{adj:.2f}" if adj is not None else "",
+                    rec.get("%changeYoYInflationAdj", ""),
+                    since2020_infl,
+                ])
+
+        print(f"Wrote: {out_path}")
+
+
+def write_since_2019(rows: List[Dict[str, str]]) -> None:
+    """Write per-year files (years after 2019) with change since 2019 columns.
+
+    Files are written to `airfare-analysis/since-2019/{year}-since-2019-change.csv`.
+    """
+    # build mapping entity -> year -> record
+    by_entity: Dict[str, Dict[int, Dict[str, str]]] = {}
+    years_set = set()
+    for r in rows:
+        code = r.get("airportCode", "")
+        city = r.get("City", "")
+        key = f"{code}|{city}"
+        y = int(r.get("year") or 0)
+        years_set.add(y)
+        by_entity.setdefault(key, {})[y] = r
+
+    target_years = sorted(y for y in years_set if y > 2019)
+    if not target_years:
+        return
+
+    for year in target_years:
+        out_path = YEAR_SINCE_2019_DIR / f"{year}-since-2019-change.csv"
+        with out_path.open("w", newline="", encoding="utf-8") as fh:
+            writer = csv.writer(fh)
+            writer.writerow([
+                "year",
+                "airportCode",
+                "City",
+                "averageFare",
+                "%YoYChange",
+                "%ChangeSince2019",
+                "2025Q2InflationAdjFare",
+                "%changeYoYInflationAdj",
+                "%changeSince2019InflationAdj",
+            ])
+
+            # iterate entities and write row if entity has record for this year
+            for key, recs in sorted(by_entity.items()):
+                code, city = key.split("|", 1)
+                rec = recs.get(year)
+                if not rec:
+                    continue
+
+                avg = float_or_none(rec.get("averageFare"))
+                adj = float_or_none(rec.get("2025Q2InflationAdjFare"))
+
+                # %ChangeSince2019
+                since2019 = ""
+                base2019_rec = recs.get(2019)
+                base2019 = float_or_none(base2019_rec.get("averageFare")) if base2019_rec else None
+                if base2019 not in (None, 0) and avg is not None:
+                    since2019 = f"{(avg - base2019) / base2019 * 100.0:.2f}"
+
+                # inflation-adjusted %changeSince2019
+                since2019_infl = ""
+                if base2019_rec and adj is not None:
+                    base_adj = float_or_none(base2019_rec.get("2025Q2InflationAdjFare"))
+                    if base_adj not in (None, 0):
+                        since2019_infl = f"{(adj - base_adj) / base_adj * 100.0:.2f}"
+
+                writer.writerow([
+                    str(year),
+                    code,
+                    city,
+                    f"{avg:.2f}" if avg is not None else "",
+                    rec.get("%YoYChange", ""),
+                    since2019,
+                    f"{adj:.2f}" if adj is not None else "",
+                    rec.get("%changeYoYInflationAdj", ""),
+                    since2019_infl,
+                ])
+
+        print(f"Wrote: {out_path}")
+
+
 def main() -> None:
     make_dirs()
     rows = collect_entities()
@@ -162,6 +316,10 @@ def main() -> None:
 
     # also produce an all-years CSV combining since-2015 data (including 2015)
     write_all_years(rows)
+    # produce per-year since-2020 CSVs (separate directory)
+    write_since_2020(rows)
+    # produce per-year since-2019 CSVs (separate directory)
+    write_since_2019(rows)
 
 
 def write_all_years(rows: List[Dict[str, str]]) -> None:
