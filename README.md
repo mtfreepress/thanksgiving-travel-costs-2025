@@ -24,3 +24,10 @@
 ## License
 - MIT License to keep things simple
 - See [LICENSE](LICENSE) for more details
+
+### Getting GasBuddy data:
+```
+curl 'https://fuelinsights.gasbuddy.com/api/HighChart/GetHighChartRecords/' \
+  --data-raw '{"regionID":[300027],"fuelType":3,"timeWindow":[13],"frequency":1}' | jq . > montana-gas-data-2.json
+  ```
+- May need to grab an auth token but /HighChart with these options gives 5 years of daily gas data
